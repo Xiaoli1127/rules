@@ -1,0 +1,109 @@
+D:\lib\libosg_vs2013_x86\lib
+D:\lib\libosg_vs2013_x86\include
+
+//Load OSG library
+#define OSG_LIBRARY_STATIC
+#pragma comment(lib,"osg131-osgAnimationd.lib")
+#pragma comment(lib,"osg131-osgd.lib")
+#pragma comment(lib,"osg131-osgDBd.lib")
+#pragma comment(lib,"osg131-osgFXd.lib")
+#pragma comment(lib,"osg131-osgGAd.lib")
+#pragma comment(lib,"osg131-osgManipulatord.lib")
+#pragma comment(lib,"osg131-osgParticled.lib")
+#pragma comment(lib,"osg131-osgPresentationd.lib")
+#pragma comment(lib,"osg131-osgShadowd.lib")
+#pragma comment(lib,"osg131-osgSimd.lib")
+#pragma comment(lib,"osg131-osgTerraind.lib")
+#pragma comment(lib,"osg131-osgTextd.lib")
+#pragma comment(lib,"osg131-osgUId.lib")
+#pragma comment(lib,"osg131-osgUtild.lib")
+#pragma comment(lib,"osg131-osgViewerd.lib")
+#pragma comment(lib,"osg131-osgVolumed.lib")
+#pragma comment(lib,"osg131-osgWidgetd.lib")
+#pragma comment(lib,"ot20-OpenThreadsd.lib")
+
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_ived.lib")
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_openflightd.lib")
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_osgd.lib")
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_rgbd.lib")
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_dxfd.lib")
+#pragma comment(lib,"osgPlugins-3.4.1\\osgdb_freetyped.lib")
+
+#pragma comment(lib,"opengl32.lib")
+
+
+#include "MFC_OSG.h"
+cOSG* mOSG;
+CRenderingThread* mThreadHandle;
+
+USE_OSGPLUGIN(dxf)
+
+mOSG = new cOSG(m_hWnd);
+
+mOSG->InitOSG("d:\\contour.dxf");
+mThreadHandle = new CRenderingThread(mOSG);
+mThreadHandle->start();
+
+delete mThreadHandle;
+if(mOSG != 0) delete mOSG;
+
+
+
+
+
+D:\lib\libosg_vs2013_x86\lib\ot20-OpenThreadsd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgDBd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgUtild.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgGAd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgViewerd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgTextd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_ived.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_openflightd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_osgd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_rgbd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_dxfd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgparticled.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osganimationd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgfxd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgsimd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgtextd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgviewerd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgshadowd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgterraind.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgvolumed.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_deprecated_osgwidgetd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgparticled.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgtextd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgterraind.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osganimationd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgfxd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgshadowd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgmanipulatord.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgsimd.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_serializers_osgvolumed.lib
+D:\lib\libosg_vs2013_x86\lib\osgPlugins-3.4.1\osgdb_freetyped.lib
+opengl32.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgWidgetd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgParticled.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgTerraind.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgAnimationd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgFXd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgShadowd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgManipulatord.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgSimd.lib
+D:\lib\libosg_vs2013_x86\lib\osg131-osgVolumed.lib
+D:\lib\osg_3rdParty_VS2013_v120_x86\x86\lib\zlibstaticd.lib
+D:\lib\osg_3rdParty_VS2013_v120_x86\x86\lib\freetype250.lib
+kernel32.lib
+user32.lib
+gdi32.lib
+winspool.lib
+shell32.lib
+ole32.lib
+oleaut32.lib
+uuid.lib
+comdlg32.lib
+advapi32.lib
